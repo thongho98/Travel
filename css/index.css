@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+}
+
+.header{
+    padding: 80px;
+    text-align: center;
+    background: #12ca5f;
+    color: white;
+}
+/*Start Navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #fff;
+    position: sticky;
+    position: -webkit-sticky;
+    height: 55px;
+    top: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  font-size: 15px;
+  color: rgb(102, 102, 102);
+  text-align: center;
+  padding: 19px 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar .nav-left a:hover {
+  background-color: #fff;
+}
+
+.navbar .nav-left a:hover:before{
+  width: 100%;
+}
+
+.navbar .nav-left a:before{
+  content: '';
+  height: 3px;
+  background-color: #ff8c00;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: width 0.3s;
+}
+
+.navbar .nav-left a:hover:after{
+  height: 100%;
+}
+
+.navbar .nav-left a:after{
+  content: '';
+  height: 0%;
+  background-color: #ff8c00;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: height 0.3s;
+}
+
+.navbar .nav-right a.right {
+  float: right;
+}
+
+.navbar .nav-right a.right:hover {
+  color: #ff8c00;
+}
+/*End Navbar */
+
+/* Button Nine*/
+#write-now{
+  border: 1px solid #ff8c00;
+  transition: border-radius 0.3s;
+  float: right;
+  padding: 8px 20px;
+  margin: 11px 0px;
+}
+
+#write-now:hover{
+  border-radius: 30px;
+}
+
